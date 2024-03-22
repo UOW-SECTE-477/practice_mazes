@@ -1,0 +1,24 @@
+<launch>
+  <set_env name="GAZEBO_MODEL_PATH" value="${GAZEBO_MODEL_PATH}:$(find-pkg-share practice_mazes)/models"/> 
+
+  <arg name="tb_model" default="waffle"/>
+  <arg name="urdf_path" default="$(find-pkg-share turtlebot3_gazebo)/models/turtlebot3_waffle/model.sdf"/>
+  <arg name="x_pos" default="0.0"/>
+  <arg name="y_pos" default="0.0"/>
+  <arg name="z_pos" default="0.0"/>
+  <arg name="yaw" default="3.142"/>
+
+  <include file="$(find-pkg-share gazebo_ros)/launch/gazebo.launch.py">
+    <arg name="world" value="$(find-pkg-share practice_mazes)/worlds/maze_5.world"/>
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+
+  <include file="$(find-pkg-share turtlebot3_gazebo)/launch/robot_state_publisher.launch.py">
+  </include>
+
+  <node name="spawn_tb3" pkg="gazebo_ros" exec="spawn_entity.py" args="-entity $(var tb_model) -file $(var urdf_path) -x $(var x_pos) -y $(var y_pos) -z $(var z_pos) -Y $(var yaw)"/>
+</launch>
