@@ -37,7 +37,7 @@ setup(
     name=package_name,
     version='0.0.0',
     packages=[package_name],
-    data_files=dir_files(['launch', 'models', 'worlds']),
+    data_files=dir_files(['launch', 'models', 'worlds', 'urdf', 'param']),
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='jeffm',
