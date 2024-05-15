@@ -381,6 +381,18 @@
         </camera>
 	      <plugin name="intel_realsense_r200_depth_driver" filename="libgazebo_ros_camera.so">
             <ros>
+                <qos>
+                    <topic name="/intel_realsense_r200_depth/image_raw">
+                        <publisher>
+                            <reliability>reliable</reliability>
+                        </publisher>
+                    </topic>
+                    <topic name="/intel_realsense_r200_depth/depth/image_raw">
+                        <publisher>
+                            <reliability>reliable</reliability>
+                        </publisher>
+                    </topic>
+                </qos>
         <!-- 
               <argument>custom_camera/image_raw:=custom_camera/custom_image</argument>
               <argument>custom_camera/image_depth:=custom_camera/custom_image_depth</argument>
