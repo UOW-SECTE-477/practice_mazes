@@ -1,0 +1,32 @@
+<launch>
+  <set_env name="GZ_SIM_RESOURCE_PATH" value="${GZ_SIM_RESOURCE_PATH}:$(find-pkg-share practice_mazes)/models"/>
+
+  <arg name="tb_model" default="waffle"/>
+  <arg name="urdf_path" default="$(find-pkg-share turtlebot3_gazebo)/models/turtlebot3_waffle/model.sdf"/>
+  <arg name="x_pos" default="0.0"/>
+  <arg name="y_pos" default="0.0"/>
+  <arg name="z_pos" default="0.0"/>
+  <arg name="yaw" default="0"/>
+
+  <include file="$(find-pkg-share ros_gz_sim)/launch/gz_sim.launch.py">
+        <arg name="gz_args" value="-r -s -v2 $(find-pkg-share practice_mazes)/worlds/maze_4_world.sdf"/>
+	    <arg name="on_exit_shutdown" value="true"/>
+  </include>
+
+  <include file="$(find-pkg-share ros_gz_sim)/launch/gz_sim.launch.py">
+        <arg name="gz_args" value="-g -v2"/>
+	    <arg name="on_exit_shutdown" value="true"/>
+  </include>
+
+  <include file="$(find-pkg-share turtlebot3_gazebo)/launch/robot_state_publisher.launch.py">
+    <arg name="use_sim_time" value="true"/>
+  </include>
+
+  <include file="$(find-pkg-share ecte477)/launch/spawn_turtlebot3.launch.py">
+        <arg name="x_pose" value="$(var x_pos)"/>
+        <arg name="y_pose" value="$(var y_pos)"/>
+        <arg name="z_pose" value="$(var z_pos)"/>
+        <arg name="yaw_pose" value="$(var yaw)"/>
+  </include>
+
+</launch>
