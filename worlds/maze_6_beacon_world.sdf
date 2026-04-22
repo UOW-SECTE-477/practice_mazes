@@ -115,14 +115,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>file:///var/home/jeffm/Workspaces/ros-jazzy/ros2_ws/src/practice_mazes/models/beacons/beacon1.obj</uri>
+              <uri>file://beacons/beacon1.obj</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>file:///var/home/jeffm/Workspaces/ros-jazzy/ros2_ws/src/practice_mazes/models/beacons/beacon1.obj</uri>
+              <uri>file://beacons/beacon1.obj</uri>
             </mesh>
           </geometry>
         </collision>
@@ -150,14 +150,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>file:///var/home/jeffm/Workspaces/ros-jazzy/ros2_ws/src/practice_mazes/models/beacons/beacon2.obj</uri>
+              <uri>file://beacons/beacon2.obj</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>file:///var/home/jeffm/Workspaces/ros-jazzy/ros2_ws/src/practice_mazes/models/beacons/beacon2.obj</uri>
+              <uri>file://beacons/beacon2.obj</uri>
             </mesh>
           </geometry>
         </collision>
@@ -185,14 +185,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>file:///var/home/jeffm/Workspaces/ros-jazzy/ros2_ws/src/practice_mazes/models/beacons/beacon3.obj</uri>
+              <uri>file://beacons/beacon3.obj</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>file:///var/home/jeffm/Workspaces/ros-jazzy/ros2_ws/src/practice_mazes/models/beacons/beacon3.obj</uri>
+              <uri>file://beacons/beacon3.obj</uri>
             </mesh>
           </geometry>
         </collision>
@@ -220,14 +220,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>file:///var/home/jeffm/Workspaces/ros-jazzy/ros2_ws/src/practice_mazes/models/beacons/beacon4.obj</uri>
+              <uri>file://beacons/beacon4.obj</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>file:///var/home/jeffm/Workspaces/ros-jazzy/ros2_ws/src/practice_mazes/models/beacons/beacon4.obj</uri>
+              <uri>file://beacons/beacon4.obj</uri>
             </mesh>
           </geometry>
         </collision>
