@@ -370,6 +370,56 @@
       <self_collide>true</self_collide>
     </model>
 
+    <actor name="actor_walking">
+        <skin>
+            <filename>file://actors/meshes/PatientRollingWalker.dae</filename>
+            <scale>0.6</scale>
+        </skin>
+        <animation name="walk">
+            <filename>file://actors/meshes/PatientRollingWalker.dae</filename>
+            <interpolate_x>true</interpolate_x>
+        </animation>
+        <script>
+            <loop>true</loop>
+            <delay_start>0.000000</delay_start>
+            <auto_start>true</auto_start>
+            <trajectory id="0" type="walk" tension="0.6">
+                <waypoint>
+                    <time>0</time>
+                    <pose>1 2 1.0 0 0 3.142</pose>
+                </waypoint>
+                <waypoint>
+                    <time>2</time>
+                    <pose>-1 2 1 0 0 3.142</pose>
+                </waypoint>
+                <waypoint>
+                    <time>4</time>
+                    <pose>-1 2 1 0 0 3.142</pose>
+                </waypoint>
+                <waypoint>
+                    <time>6</time>
+                    <pose>-3 2 1.0 0 0 3.142</pose>
+                </waypoint>
+                <waypoint>
+                    <time>8</time>
+                    <pose>-3 2 1.0 0 0 0</pose>
+                </waypoint>
+                <waypoint>
+                    <time>10</time>
+                    <pose>-1 2 1 0 0 0</pose>
+                </waypoint>
+                <waypoint>
+                    <time>12</time>
+                    <pose>-1 2 1 0 0 0</pose>
+                </waypoint>
+                <waypoint>
+                    <time>14</time>
+                    <pose>1 2 1.0 0 0 0</pose>
+                </waypoint>
+            </trajectory>
+    </script>
+    </actor>
+
     <light name='sun' type='directional'>
       <pose>0 0 10 0 0 0</pose>
       <cast_shadows>true</cast_shadows>
