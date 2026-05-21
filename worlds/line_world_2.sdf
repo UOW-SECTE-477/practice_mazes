@@ -397,27 +397,27 @@
                     <pose>0 2.5 0 0 0 3.142</pose>
                 </waypoint>
                 <waypoint>
-                    <time>6</time>
+                    <time>8</time>
                     <pose>0 2.5 0 0 0 3.142</pose>
                 </waypoint>
                 <waypoint>
-                    <time>10</time>
+                    <time>12</time>
                     <pose>-2 2.5 0 0 0 3.142</pose>
                 </waypoint>
                 <waypoint>
-                    <time>12</time>
+                    <time>14</time>
                     <pose>-2 2.5 0 0 0 0</pose>
                 </waypoint>
                 <waypoint>
-                    <time>16</time>
+                    <time>20</time>
                     <pose>0 2.5 0 0 0 0</pose>
                 </waypoint>
                 <waypoint>
-                    <time>18</time>
+                    <time>24</time>
                     <pose>0 2.5 0 0 0 0</pose>
                 </waypoint>
                 <waypoint>
-                    <time>22</time>
+                    <time>28</time>
                     <pose>2 2.5 0 0 0 0</pose>
                 </waypoint>
             </trajectory>
