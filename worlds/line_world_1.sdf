@@ -373,6 +373,7 @@
       <static>false</static>
       <self_collide>true</self_collide>
     </model>
+
     <light name='sun' type='directional'>
       <pose>0 0 10 0 0 0</pose>
       <cast_shadows>true</cast_shadows>
